@@ -52,7 +52,7 @@ B) todo: without google assistant
 ##  3. Prepare adb connection
 _if your phone does not automatically enables the adb connection, or you did not authenticate your device with your phone before, you need another input method to enable the connection, because you probably can not connect an usb keyboard and your adb device at the same time._
 
-A) connect bluetooth controler:
+A) connect bluetooth controller:
 
 _if you have some bluetooth controller or keyboard, you can use it to control your phone while it should connect to your adb device._
 - if you are lucky you already connected the controller and only need to enable bluetooth if disabled.
