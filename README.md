@@ -13,43 +13,46 @@ You need:
 
 ## 0. Preparation:
 - follow https://github.com/v1nc/Raspberry-Zero-Mouse-Simulation to install mouse simulation on your pi zero
-- clone repo on your pi
-- copy `hid-gadget-test` into the repo dir and rename it `hid`
+- clone this repo on your pi
+- copy `hid-gadget-test` into the repo dir and rename it to `hid`
 - turn on sound of your phone if possible, to get some feedback
 
 ## 1. Unlock:
 A) Password Lock:
-- connect keyboard via otg
-- press ENTER, then SPACE
-- type in your password and hit enter
-- if your password contains y/z and it does not work, your keyboard layout could be different, try to switch them.
+- connect keyboard via otg.
+- press ENTER, then SPACE.
+- type in your password and hit enter.
+- if your password contains y/z and it does not work, your keyboard layout could be different, try switching y/z in your password.
 - wait for the click sound to verify its unlocked.
 
 B) Pattern lock:
 - open `unlock.py` in your favorite editor.
 - if your pattern does not start in the top left corner, add `move_right()`, `move_left()`, `move_up()` or `move_down()` after line 118, to navigate to your starting point.
-- if your pattern is not the small v, edit the lines after 141 to implement your pattern.
+- if your pattern is not the small v, edit the lines after 141 to implement your pattern. Look at the examples in the script.
 - make sure to copy the modified `unlock.py` to the pi.
-- connect the raspberrys otg port to your phone, if your sound does work and you hear the charging sound, remove the cable you connected to your phones otg adapter and reconnect, until you hear a different sound.
+- connect the raspberry's otg port to your phone, if your sound does work and you hear the charging sound, remove the cable you connected to your phones otg adapter and reconnect, until you hear a different sound.
 - execute `python3 unlock.py`.
-- if you get `IOError: [Errno 108] Cannot send after transport endpoint shutdown`, then the raspberry is not connected properly.
+- if you get `IOError: [Errno 108] Cannot send after transport endpoint shutdown`, then the raspberry is not connected properly via otg.
 - wait for the script to finish and hear the unlock sound, if your sound works.
 - if you are lucky and your phone automatically connects to your adb device, you can proceed with step 5.
 ## 2. Talkback
 _the easiest way to control your broken phone is Talkback. Once its enabled, you can use your keyboard to navigate and your phone will read out the screen content_
 - if you are lucky and your volume buttons still work, you can enable talkback by holding down vol+ and vol- for 3 seconds.
 - keep in mind that to unlock your phone with `unlock.py`, you need to disable talkback again.
+- 
 A) with google assistant:
 - run `talkback.py` and say 'open settings' in your device language, your phone will say 'yes' or 'opening settings'
 - wait for the script to enable talkback
+
 B) todo: without google assistant
 
 ##  3. Prepare adb connection
 _if your phone does not automatically enables the adb connection, or you did not authenticate your device with your phone before, you need another input method to enable the connection, because you probably can not connect an usb keyboard and your adb device at the same time._
 
 A) connect bluetooth controler:
+
 _if you have some bluetooth controller or keyboard, you can use it to control your phone while it should connect to your adb device._
-- if you are lucky you already connected controller and only need to enable bluetooth if disabled.
+- if you are lucky you already connected the controller and only need to enable bluetooth if disabled.
 - otherwise you can use your keyboard and talkback to open settings, enable bluetooth and connect the controller.
 - because initial connection is not always straightforward with cheap controllers, you can also use the play store or your favorite app store to install [Screen Stream](https://play.google.com/store/apps/details?id=info.dvkr.screenstream)
 - if you are lucky and your phone is connected with your google account, you can login to the playstore on your browser and install the app on your phone without any interaction
