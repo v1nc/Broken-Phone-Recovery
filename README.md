@@ -46,7 +46,6 @@ _the easiest way to control your broken phone is Talkback. Once its enabled, you
 - using google assistant is more reliable to open apps, but if you type `n` the script will try to open settings with the mouse
 - wait for the script to enable talkback
 
-### B) todo: without google assistant
 
 ##  3. Prepare adb connection
 _if your phone does not automatically enables the adb connection, or you did not authenticate your device with your phone before, you need another input method to enable the connection, because you probably can not connect an usb keyboard and your adb device at the same time._
