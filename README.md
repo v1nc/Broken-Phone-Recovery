@@ -18,14 +18,14 @@ You need:
 - turn on sound of your phone if possible, to get some feedback
 
 ## 1. Unlock:
-A) Password Lock:
+### A) Password Lock:
 - connect keyboard via otg.
 - press ENTER, then SPACE.
 - type in your password and hit enter.
 - if your password contains y/z and it does not work, your keyboard layout could be different, try switching y/z in your password.
 - wait for the click sound to verify its unlocked.
 
-B) Pattern lock:
+### B) Pattern lock:
 - open `unlock.py` in your favorite editor.
 - if your pattern does not start in the top left corner, add `move_right()`, `move_left()`, `move_up()` or `move_down()` after line 118, to navigate to your starting point.
 - if your pattern is not the small v, edit the lines after 141 to implement your pattern. Look at the examples in the script.
@@ -42,17 +42,17 @@ _the easiest way to control your broken phone is Talkback. Once its enabled, you
 - keep in mind that to unlock your phone with `unlock.py`, you need to disable talkback again.
 - if your volume buttons dont work or the shortcut is disabled, you can use `talkback.py`
 
-A) with google assistant:
+### A) with google assistant:
 - run `talkback.py` and say 'open settings' in your device language, your phone will say 'yes' or 'opening settings'
 - wait for the script to enable talkback
 
 
-B) todo: without google assistant
+### B) todo: without google assistant
 
 ##  3. Prepare adb connection
 _if your phone does not automatically enables the adb connection, or you did not authenticate your device with your phone before, you need another input method to enable the connection, because you probably can not connect an usb keyboard and your adb device at the same time._
 
-A) connect bluetooth controller:
+### A) connect bluetooth controller:
 _if you have some bluetooth controller or keyboard, you can use it to control your phone while it should connect to your adb device._
 
 - if you are lucky you already connected the controller and only need to enable bluetooth if disabled.
@@ -63,7 +63,7 @@ _if you have some bluetooth controller or keyboard, you can use it to control yo
 - next steps will be more comfortable, because you do not need talkback anymore
 - finally connect your bluetooth controller/keyboard
 
-B) connect remote control app:
+### B) connect remote control app:
 _if you dont have a bluetooth device, you need to setup a remote control app like teamviewer_
 
 - install [teamviewer host](https://play.google.com/store/apps/details?id=com.teamviewer.host.market) on your phone with talkback, your keyboard and your favorite play store
