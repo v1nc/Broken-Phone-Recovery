@@ -77,3 +77,13 @@ _if you dont have a bluetooth device, you need to setup a remote control app lik
 - use other [tutorials](https://gist.github.com/AnatomicJC/e773dd55ae60ab0b2d6dd2351eb977c1) to backup your app data
 - some apps like banking or OTP apps set `android:allowBackup=False`, then you can only backup app data if your boot loader is unlocked
 - install [scrcpy](https://github.com/Genymobile/scrcpy) to open OTP apps like Aegis and copy your backup code. Most of them disable screen sharing with teamviewer or Screen Stream, but scrcpy works anyway.
+
+## 6. Contribution
+- feel free to create an issue if something does not work, or you have a use case that is not covered in this tutorial
+- also any other contributions are welcome
+
+
+#### todo:
+- update `unlock.py` so user can pass pattern string and doesnt need to edit the script
+- add script to start screen sharing
+- look for foss screen sharing and remote controlling apps
