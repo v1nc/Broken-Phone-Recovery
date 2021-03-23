@@ -53,8 +53,8 @@ B) todo: without google assistant
 _if your phone does not automatically enables the adb connection, or you did not authenticate your device with your phone before, you need another input method to enable the connection, because you probably can not connect an usb keyboard and your adb device at the same time._
 
 A) connect bluetooth controller:
-
 _if you have some bluetooth controller or keyboard, you can use it to control your phone while it should connect to your adb device._
+
 - if you are lucky you already connected the controller and only need to enable bluetooth if disabled.
 - otherwise you can use your keyboard and talkback to open settings, enable bluetooth and connect the controller.
 - because initial connection is not always straightforward with cheap controllers, you can also use the play store or your favorite app store to install [Screen Stream](https://play.google.com/store/apps/details?id=info.dvkr.screenstream)
@@ -64,7 +64,8 @@ _if you have some bluetooth controller or keyboard, you can use it to control yo
 - finally connect your bluetooth controller/keyboard
 
 B) connect remote control app:
-- if you dont have a bluetooth device, you need to setup a remote control app like teamviewer
+_if you dont have a bluetooth device, you need to setup a remote control app like teamviewer_
+
 - install [teamviewer host](https://play.google.com/store/apps/details?id=com.teamviewer.host.market) on your phone with talkback, your keyboard and your favorite play store
 - if you are lucky and your phone is connected with your google account, you can login to the playstore on your browser and install the app on your phone without any interaction
 - install teamviewer on your second device and connect your phone
