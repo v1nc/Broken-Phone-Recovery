@@ -1,4 +1,4 @@
-# Broken-Phone-Recovery
+# Broken Phone Recovery
 _a guide how to backup data from your locked android phone if you broke your screen (and more)_
 
 _you can skip some steps depending on your situation_ 
