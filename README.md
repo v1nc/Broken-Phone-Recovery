@@ -40,7 +40,8 @@ B) Pattern lock:
 _the easiest way to control your broken phone is Talkback. Once its enabled, you can use your keyboard to navigate and your phone will read out the screen content_
 - if you are lucky and your volume buttons still work, you can enable talkback by holding down vol+ and vol- for 3 seconds.
 - keep in mind that to unlock your phone with `unlock.py`, you need to disable talkback again.
-- 
+- if your volume buttons dont work or the shortcut is disabled, you can use `talkback.py`
+
 A) with google assistant:
 - run `talkback.py` and say 'open settings' in your device language, your phone will say 'yes' or 'opening settings'
 - wait for the script to enable talkback
