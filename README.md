@@ -35,7 +35,7 @@ B) Pattern lock:
 - if you get `IOError: [Errno 108] Cannot send after transport endpoint shutdown`, then the raspberry is not connected properly via otg.
 - wait for the script to finish and hear the unlock sound, if your sound works.
 - if you are lucky and your phone automatically connects to your adb device, you can proceed with step 5.
-- 
+
 ## 2. Talkback
 _the easiest way to control your broken phone is Talkback. Once its enabled, you can use your keyboard to navigate and your phone will read out the screen content_
 - if you are lucky and your volume buttons still work, you can enable talkback by holding down vol+ and vol- for 3 seconds.
