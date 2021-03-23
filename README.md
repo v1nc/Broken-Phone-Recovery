@@ -41,9 +41,8 @@ _the easiest way to control your broken phone is Talkback. Once its enabled, you
 - if you are lucky and your volume buttons still work, you can enable talkback by holding down vol+ and vol- for 3 seconds.
 - keep in mind that to unlock your phone with `unlock.py`, you need to disable talkback again.
 - if your volume buttons dont work or the shortcut is disabled, you can use `talkback.py`
-
-### A) with google assistant:
-- run `talkback.py` and say 'open settings' in your device language, your phone will say 'yes' or 'opening settings'
+- run `python talkback.py`, it will ask you to use google assistant
+- using google assistant is more reliable to open apps, but you can also use the mouse emulation to open the settings
 - wait for the script to enable talkback
 
 
